@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">ValorantSkins</h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar Produto" oninput="buscarProduto()">
+                <button onclick="">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src="img/cart-shopping-solid.svg" alt="carrinho de compras">
+                </div>
+                <span id="cont-carrinho">0</span>
+            </div>
+            <div id="carrinho-itens" style="display: none;">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">VPs 0,00</span>
+                <button class="limpa" onclick="limparCarrinho()">limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="container">
+            <div class="nome">
+                <h2 class="nome-secao">Meus produtos</h2>
+            </div>
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/sublime.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Vandal sublime</h3>
+                            <p>1775 VP</p>
+                            <button onclick="addCarrinho('Vandal glithpop',2175)">Adiciona ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/glithpop.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Vandal glithpop</h3>
+                            <p>2175 VP</p>
+                            <button onclick="addCarrinho('Vandal glithpop',2175)">Adiciona ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/dragao.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Vandal Dragão</h3>
+                            <p>2475 VP</p>
+                            <button onclick="addCarrinho('Vandal Araxis',2175)">Adiciona ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/singularidade.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Phantom Singularidade</h3>
+                            <p>1775 VP</p>
+                            <button onclick="addCarrinho('Phantom Singularidade',1775)">Adiciona ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/oni.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Phantom oni</h3>
+                            <p>1775 VP</p>
+                            <button onclick="addCarrinho('Phantom Singularidade',1775)">Adiciona ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="img/ion.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Phantom Ion</h3>
+                            <p>1775 VP</p>
+                            <button onclick="addCarrinho('Phantom Ion',1775)">Adiciona ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+
+    <script src="main.js"></script>
+</body>
+
+</html>

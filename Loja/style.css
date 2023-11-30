@@ -1,0 +1,101 @@
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#header {
+    background-color: red;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Ajuste o padding para dar espaço ao redor do conteúdo */
+}
+
+#header .imagem {
+    width: 60px;
+    height: 50px;
+}
+
+header {
+    display: flex;
+}
+
+header .container {
+    justify-content: space-between;
+    display: flex;
+    width: 100%; /* Garante que ocupa a largura total do header */
+}
+
+.container {
+    margin: 0 150px;
+    display: flex;
+}
+
+#main .container {
+    flex-direction: column;
+}
+
+.produto-linha {
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    border: 2px solid black;
+    padding: 5px 7px;
+    border-radius: 8px;
+}
+
+#carrinho-icon img {
+    width: 50px;
+}
+
+#carrinho-icon {
+    display: flex;
+}
+
+.produto img {
+    width: 200px;
+    height: 100px;
+}
+
+.produto-linha {
+    margin: 70px;
+}
+
+.produto {
+    text-align: center;
+    margin-top: 5px;
+}
+
+button {
+    /* Adicione estilos para os botões conforme necessário */
+}
+
+.nome {
+    text-align: center;
+    margin-top: 50px;
+}
